@@ -30,15 +30,6 @@ import Trello from "@/components/icons/Trello"
 import Typescript from "@/components/icons/Typescript"
 import Zendesk from "@/components/icons/Zendesk"
 
-export const links = [
- { label: "Home", href: "/" },
- { label: "About", href: "/about" },
- { label: "Skills", href: "/skills" },
- { label: "Projects", href: "/projects" },
- { label: "Artboards", href: "/artboards" },
- { label: "Contact", href: "/contact" }
-]
-
 export const socials = [
  { label: "Linkedin", href: "https://linkedin.com/in/jeff-claybrook", icon: <Linkedin /> },
  { label: "Github", href: "https://github.com/jeffclaybrook", icon: <Github /> },
