@@ -5,6 +5,7 @@ import Menu from "./icons/Menu"
 import { FC } from "react"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
+import { socials } from "@/lib/data"
 
 const NavItems = () => {
  const pathname = usePathname()
@@ -96,6 +97,20 @@ const Navbar = () => {
      {navItems.map((item, i) => (
       <li key={i}>
        <Link href={item.href} className="text-lg">{item.label}</Link>
+      </li>
+     ))}
+    </ul>
+    <ul className="menu menu-horizontal gap-4 mt-auto">
+     {socials.map((social, i) => (
+      <li key={i}>
+       <a
+        href={social.href}
+        target="_blank"
+        rel="noreferrer"
+        className="btn btn-ghost"
+       >
+        {social.icon}
+       </a>
       </li>
      ))}
     </ul>
