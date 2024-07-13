@@ -37,7 +37,7 @@ const NavbarItem: FC<{
   <Link
    href={href}
    className={cn(
-    "text-[#cbd5e1] text-lg rounded-none focus:text-[#f8fafc] bg-none px-2",
+    "text-[#cbd5e1] text-lg rounded-none focus:text-[#f8fafc] bg-none px-1",
     active && "border-b text-[#f8fafc]"
    )}
   >

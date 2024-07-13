@@ -132,15 +132,15 @@ export const artboards: CustomImage[] = [
   height: 600
  },
  {
-  original: "/images/artboard-12.webp",
-  src: "/images/artboard-12.webp",
-  width: 292,
-  height: 600
- },
- {
   original: "/images/artboard-3.webp",
   src: "/images/artboard-3.webp",
   width: 960,
+  height: 600
+ },
+ {
+  original: "/images/artboard-12.webp",
+  src: "/images/artboard-12.webp",
+  width: 292,
   height: 600
  },
  {
