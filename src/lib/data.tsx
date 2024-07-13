@@ -26,6 +26,7 @@ import Nodejs from "@/components/icons/Nodejs"
 import Npm from "@/components/icons/Npm"
 import React from "@/components/icons/React"
 import Sass from "@/components/icons/Sass"
+import TailwindCss from "@/components/icons/Tailwindcss"
 import Trello from "@/components/icons/Trello"
 import Typescript from "@/components/icons/Typescript"
 import Zendesk from "@/components/icons/Zendesk"
@@ -61,9 +62,9 @@ export const skills = [
  { title: "Netlify", icon: <Netlify /> },
  { title: "NextJS", icon: <Nextjs /> },
  { title: "NodeJS", icon: <Nodejs /> },
- { title: "NPM", icon: <Npm /> },
  { title: "React", icon: <React /> },
  { title: "Sass", icon: <Sass /> },
+ { title: "TailwindCSS", icon: <TailwindCss /> },
  { title: "Trello", icon: <Trello /> },
  { title: "Typescript", icon: <Typescript /> },
  { title: "Zendesk", icon: <Zendesk /> }
