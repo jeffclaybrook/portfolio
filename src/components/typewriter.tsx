@@ -19,7 +19,7 @@ const Typewriter = () => {
  })
 
  return (
-  <strong className="font-bold">{text}</strong>
+  <strong className="font-bold text-[#f8fafc]">{text}</strong>
  )
 }
 

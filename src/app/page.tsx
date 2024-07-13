@@ -17,7 +17,7 @@ export default function Home() {
  return (
   <>
    <Header image="/images/hero-1.webp">
-    <h1 className="text-4xl lg:text-5xl font-light text-[#cbd5e1] mb-2">Hi, my name is <strong className="font-bold">Jeff</strong></h1>
+    <h1 className="text-4xl lg:text-5xl font-light text-[#cbd5e1] mb-2">Hi, my name is <strong className="font-bold text-[#f8fafc]">Jeff</strong></h1>
     <p className="text-2xl lg:text-2xl mb-4 text-[#cbd5e1]">and I&apos;m a <Typewriter /></p>
     <div className="flex items-center gap-4">
      <a

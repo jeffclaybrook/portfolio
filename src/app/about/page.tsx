@@ -10,7 +10,7 @@ export default function Page() {
  return (
   <>
    <Header image="/images/hero-2.webp">
-   <h1 className="text-4xl lg:text-5xl font-light text-[#cbd5e1] mb-2">About</h1>
+   <h1 className="text-4xl lg:text-5xl font-light text-[#f8fafc] mb-2">About</h1>
    <p className="text-2xl lg:text-2xl mb-4 text-[#cbd5e1]">A little bit about me and the things I dabble in</p>
    </Header>
    <Main>
