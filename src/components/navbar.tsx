@@ -47,7 +47,7 @@ export default function Navbar() {
     initial="hidden"
     animate="visible"
     variants={containerVariants}
-    className="flex items-center justify-between absolute w-full z-30 py-6 lg:pl-6 pl-4 pr-4 lg:pr-6"
+    className="flex items-center justify-between absolute w-full z-30 lg:py-6 py-4 lg:pl-6 pl-4 pr-4 lg:pr-6"
    >
     <div className="flex-1">
      <Link href={"/"} aria-label="Jeffrey Claybrook" className="uppercase text-lg text-slate-200">

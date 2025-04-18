@@ -31,7 +31,7 @@ export default function Home() {
       target="_blank"
       rel="noreferrer"
       aria-label="My Resume"
-      className="inline-flex items-center justify-center lg:gap-2 gap-1.5 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-slate-700 hover:bg-slate-900/90 h-12 rounded-md lg:px-8 px-4"
+      className="inline-flex items-center justify-center lg:gap-2 gap-1.5 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-slate-700 hover:bg-slate-900/90 h-12 rounded-md lg:px-8 px-6"
      >
       <Resume />
       My Resume
@@ -41,7 +41,7 @@ export default function Home() {
       target="_blank"
       rel="noreferrer"
       aria-label="My GitHub"
-      className="inline-flex items-center justify-center lg:gap-2 gap-1.5 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-slate-50 text-slate-700 hover:bg-slate-200 h-12 rounded-md lg:px-8 px-4"
+      className="inline-flex items-center justify-center lg:gap-2 gap-1.5 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-slate-50 text-slate-700 hover:bg-slate-200 h-12 rounded-md lg:px-8 px-6"
      >
       <GithubAlt />
       My GitHub
