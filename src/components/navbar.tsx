@@ -5,7 +5,9 @@ import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { Close, Menu } from "./icons"
+import { socials } from "@/lib/data"
 import Link from "next/link"
+import Tooltip from "./tooltip"
 
 type Link = {
  label: string
@@ -116,6 +118,22 @@ export default function Navbar() {
        >
         {link.label}
        </Link>
+      </li>
+     ))}
+    </ul>
+    <ul className="flex items-center justify-around mb-2">
+     {socials.map((social, i) => (
+      <li key={i}>
+       <Tooltip label={social.label}>
+        <a
+         href={social.href}
+         target="_blank"
+         rel="noreferrer"
+         className="flex items-center justify-center p-3 text-[#475569] rounded-full hover:bg-slate-100"
+        >
+         <social.icon />
+        </a>
+       </Tooltip>
       </li>
      ))}
     </ul>
