@@ -80,7 +80,7 @@ export type Project = {
 
 export const projects: Project[] = [
  { title: "Music App", href: "https://music-player-pi-self.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-1.webp" },
- { title: "Calculator App", href: "https://jeffclaybrook.github.io/CalcPWA", image: "https://d2mx7vld70uuck.cloudfront.net/project-2.webp" },
+ { title: "Calculator App", href: "https://calculator-seven-lyart.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-2.webp" },
  { title: "Notes App", href: "https://notes-app-henna-six.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-3.webp" },
  { title: "Contacts List", href: "https://crud-search-pagination-six.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-4.webp" },
  { title: "Video Player", href: "https://jeffclaybrook.github.io/custom-video-player", image: "https://d2mx7vld70uuck.cloudfront.net/project-5.webp" },
