@@ -17,7 +17,7 @@ export default function Project({ title, href, image }: ProjectProps) {
    className="rounded-lg overflow-hidden hover:rounded-3xl duration-300"
   >
    <div className="flex flex-col items-center justify-center py-24 bg-[#2b3440b3] text-slate-200">
-    <h3 className="text-2xl tracking-wide mb-3 5">{title}</h3>
+    <h3 className="text-2xl tracking-wide mb-3">{title}</h3>
     <NewTab className="size-6" />
    </div>
   </a>

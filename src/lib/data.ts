@@ -82,9 +82,9 @@ export const projects: Project[] = [
  { title: "Music App", href: "https://music-player-pi-self.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-1.webp" },
  { title: "Calculator App", href: "https://calculator-seven-lyart.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-2.webp" },
  { title: "Notes App", href: "https://notes-app-henna-six.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-3.webp" },
- { title: "Contacts List", href: "https://crud-search-pagination-six.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-4.webp" },
+ { title: "Contacts List", href: "https://contacts-app-khaki.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-4.webp" },
  { title: "Video Player", href: "https://jeffclaybrook.github.io/custom-video-player", image: "https://d2mx7vld70uuck.cloudfront.net/project-5.webp" },
- { title: "Task App", href: "https://jeffclaybrook.github.io/Task-App", image: "https://d2mx7vld70uuck.cloudfront.net/project-6.webp" },
+ { title: "Task App", href: "https://todo-app-coral-omega-23.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-6.webp" },
  { title: "Writing Sample", href: "https://d2mx7vld70uuck.cloudfront.net/AE+User+Guide.pdf", image: "https://d2mx7vld70uuck.cloudfront.net/project-7.webp" },
  { title: "YouTube Clone", href: "https://mediasphere.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-8.webp" },
  { title: "Food Truck Menu", href: "https://lilbaghdad.com/", image: "https://d2mx7vld70uuck.cloudfront.net/project-9.webp" }
