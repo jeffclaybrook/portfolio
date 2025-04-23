@@ -87,7 +87,7 @@ export const projects: Project[] = [
  { title: "Task App", href: "https://todo-app-coral-omega-23.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-6.webp" },
  { title: "Writing Sample", href: "https://d2mx7vld70uuck.cloudfront.net/AE+User+Guide.pdf", image: "https://d2mx7vld70uuck.cloudfront.net/project-7.webp" },
  { title: "YouTube Clone", href: "https://mediasphere.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-8.webp" },
- { title: "Food Truck Menu", href: "https://lilbaghdad.com/", image: "https://d2mx7vld70uuck.cloudfront.net/project-9.webp" }
+ { title: "Food Truck Menu", href: "https://lil-baghdad.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-9.webp" }
 ]
 
 export type Testimonial = {
