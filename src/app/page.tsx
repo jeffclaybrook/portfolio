@@ -1,103 +1,141 @@
-import Image from "next/image";
+import { testimonials } from "@/lib/data"
+import { Button } from "@/components/ui/button"
+import { AboutGrid } from "@/components/AboutGrid"
+import { ArtboardCarousel } from "@/components/ArtboardCarousel"
+import { ContactForm } from "@/components/ContactForm"
+import { Faqs } from "@/components/Faqs"
+import { ForwardButton } from "@/components/ForwardButton"
+import { Header } from "@/components/Header"
+import { Main } from "@/components/Main"
+import { ProjectGrid } from "@/components/ProjectGrid"
+import { Section } from "@/components/Section"
+import { SkillGrid } from "@/components/SkillGrid"
+import { Testimonial } from "@/components/Testimonial"
+import { GithubAlt, Resume } from "@/components/Icons"
+import { Typewriter } from "@/components/Typewriter"
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+ return (
+  <>
+   <Header image="https://d2mx7vld70uuck.cloudfront.net/hero-1.webp">
+    <h1 className="text-4xl lg:text-5xl font-light mb-2">
+     Hi, my name is <strong className="text-slate-50 font-bold">Jeff</strong>
+    </h1>
+    <p className="text-2xl mb-4">
+     and I&apos;m a <Typewriter />
+    </p>
+    <div className="flex gap-4">
+     <Button
+      type="button"
+      asChild
+      className="bg-slate-700 hover:bg-slate-900/90 lg:gap-2 gap-1.5 whitespace-nowrap font-medium transition-colors h-12 px-6 lg:px-8 has-[>svg]:px-6 lg:has-[>svg]:px-8"
+     >
+      <a
+       href={"https://jeffclaybrook.s3.us-east-1.amazonaws.com/Resume.pdf"}
+       target="_blank"
+       rel="noreferrer"
+       aria-label="My Resume"
+      >
+       <Resume className="size-6" />
+       My Resume
+      </a>
+     </Button>
+     <Button
+      type="button"
+      variant="secondary"
+      asChild
+      className="bg-slate-50 text-slate-700 hover:bg-slate-200 lg:gap-2 gap-1.5 whitespace-nowrap font-medium transition-colors h-12 px-6 lg:px-8 has-[>svg]:px-6 lg:has-[>svg]:px-8"
+     >
+      <a
+       href={"https://github.com/jeffclaybrook"}
+       target="_blank"
+       rel="noreferrer"
+       aria-label="My GitHub"
+      >
+       <GithubAlt className="size-6" />
+       My GitHub
+      </a>
+     </Button>
     </div>
-  );
+   </Header>
+   <Main>
+    <Section
+     id="about"
+     title="About"
+     subtitle="A little bit about me and what I bring to the party"
+    >
+     <AboutGrid />
+     <ForwardButton href={"/about"} label="More About Me" />
+    </Section>
+    <Testimonial
+     name={testimonials[0].name}
+     title={testimonials[0].title}
+     quote={testimonials[0].quote}
+     image={testimonials[0].image}
+    />
+    <Section
+     id="skills"
+     title="Skills"
+     subtitle="I'm a Jeff of all trades"
+    >
+     <SkillGrid />
+     <ForwardButton href={"/skills"} label="More Skills" />
+    </Section>
+    <Testimonial
+     name={testimonials[1].name}
+     title={testimonials[1].title}
+     quote={testimonials[1].quote}
+     image={testimonials[1].image}
+    />
+    <Section
+     id="projects"
+     title="Projects"
+     subtitle="A few sample projects you can demo"
+    >
+     <ProjectGrid />
+     <ForwardButton href={"/projects"} label="More Projects" />
+    </Section>
+    <Testimonial
+     name={testimonials[2].name}
+     title={testimonials[2].title}
+     quote={testimonials[2].quote}
+     image={testimonials[2].image}
+    />
+    <Section
+     id="artboards"
+     title="Artboards"
+     subtitle="Getting the most out of every pixel"
+    >
+     <ArtboardCarousel />
+     <ForwardButton href={"/artboards"} label="More Artboards" />
+    </Section>
+    <Testimonial
+     name={testimonials[3].name}
+     title={testimonials[3].title}
+     quote={testimonials[3].quote}
+     image={testimonials[3].image}
+    />
+    <Section
+     id="faqs"
+     title="FAQs"
+     subtitle="Frequently asked questions"
+    >
+     <Faqs />
+    </Section>
+    <Testimonial
+     name={testimonials[4].name}
+     title={testimonials[4].title}
+     quote={testimonials[4].quote}
+     image={testimonials[4].image}
+    />
+    <Section
+     id="contact"
+     title="Contact"
+     subtitle="Let's get in touch!"
+    >
+     <ContactForm />
+    </Section>
+   </Main>
+  </>
+ )
 }
