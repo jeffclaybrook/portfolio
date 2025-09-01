@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { NavbarButton } from "./NavbarButton"
+import { Button } from "./ui/button"
 import Link from "next/link"
 
 type LinkProps = {
@@ -30,16 +30,14 @@ export function NavbarDesktop(props: NavbarDesktopProps) {
     <ul className="flex items-center gap-6">
      {props.links.links.map((link, i) => (
       <li key={i}>
-       <Link href={link.href}>
-        <NavbarButton
-         className={cn(
-          "text-slate-300 text-lg rounded-none focus:text-slate-50 bg-transparent focus:bg-transparent hover:bg-transparent hover:text-slate-50 active:bg-transparent px-2",
-          pathname === link.href && "border-b text-slate-50"
-         )}
-        >
-         {link.label}
-        </NavbarButton>
-       </Link>
+       <Button
+        type="button"
+        variant="link"
+        asChild
+        className={cn(pathname === link.href && "border-b text-slate-50")}
+       >
+        <Link href={link.href} aria-label={`Link to ${link.label}`}>{link.label}</Link>
+       </Button>
       </li>
      ))}
     </ul>

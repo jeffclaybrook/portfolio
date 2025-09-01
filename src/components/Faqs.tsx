@@ -15,7 +15,7 @@ export function Faqs() {
     <Accordion type="single" collapsible>
      {faqs.map((faq, i) => (
       <AccordionItem key={i} value={faq.value}>
-       <AccordionTrigger className="text-start cursor-pointer">{faq.question}</AccordionTrigger>
+       <AccordionTrigger>{faq.question}</AccordionTrigger>
        <AccordionContent>{faq.response}</AccordionContent>
       </AccordionItem>
      ))}

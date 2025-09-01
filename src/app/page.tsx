@@ -27,8 +27,8 @@ export default function Home() {
     <div className="flex gap-4">
      <Button
       type="button"
+      size="lg"
       asChild
-      className="bg-slate-700 hover:bg-slate-900/90 lg:gap-2 gap-1.5 whitespace-nowrap font-medium transition-colors h-12 px-6 lg:px-8 has-[>svg]:px-6 lg:has-[>svg]:px-8"
      >
       <a
        href={"https://jeffclaybrook.s3.us-east-1.amazonaws.com/Resume.pdf"}
@@ -43,8 +43,8 @@ export default function Home() {
      <Button
       type="button"
       variant="secondary"
+      size="lg"
       asChild
-      className="bg-slate-50 text-slate-700 hover:bg-slate-200 lg:gap-2 gap-1.5 whitespace-nowrap font-medium transition-colors h-12 px-6 lg:px-8 has-[>svg]:px-6 lg:has-[>svg]:px-8"
      >
       <a
        href={"https://github.com/jeffclaybrook"}
@@ -65,7 +65,10 @@ export default function Home() {
      subtitle="A little bit about me and what I bring to the party"
     >
      <AboutGrid />
-     <ForwardButton href={"/about"} label="More About Me" />
+     <ForwardButton
+      href={"/about"}
+      label="More About Me"
+     />
     </Section>
     <Testimonial
      name={testimonials[0].name}
@@ -79,7 +82,10 @@ export default function Home() {
      subtitle="I'm a Jeff of all trades"
     >
      <SkillGrid />
-     <ForwardButton href={"/skills"} label="More Skills" />
+     <ForwardButton
+      href={"/skills"}
+      label="More Skills"
+     />
     </Section>
     <Testimonial
      name={testimonials[1].name}
@@ -93,7 +99,10 @@ export default function Home() {
      subtitle="A few sample projects you can demo"
     >
      <ProjectGrid />
-     <ForwardButton href={"/projects"} label="More Projects" />
+     <ForwardButton
+      href={"/projects"}
+      label="More Projects"
+     />
     </Section>
     <Testimonial
      name={testimonials[2].name}
@@ -107,7 +116,10 @@ export default function Home() {
      subtitle="Getting the most out of every pixel"
     >
      <ArtboardCarousel />
-     <ForwardButton href={"/artboards"} label="More Artboards" />
+     <ForwardButton
+      href={"/artboards"}
+      label="More Artboards"
+     />
     </Section>
     <Testimonial
      name={testimonials[3].name}

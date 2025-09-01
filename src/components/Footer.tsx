@@ -19,7 +19,6 @@ export function Footer() {
          variant="ghost"
          size="icon"
          asChild
-         className="text-[#475569] size-10 rounded-full"
         >
          <a
           href={social.href}

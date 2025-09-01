@@ -74,7 +74,6 @@ export function ContactForm() {
           type="text"
           placeholder="Your name"
           required
-          className="h-12 focus-visible:ring-[1px]"
           {...field}
          />
         </FormControl>
@@ -93,7 +92,6 @@ export function ContactForm() {
           type="email"
           placeholder="Your email"
           required
-          className="h-12 focus-visible:ring-[1px]"
           {...field}
          />
         </FormControl>
@@ -112,7 +110,6 @@ export function ContactForm() {
           placeholder="Message"
           rows={6}
           required
-          className="min-h-28 focus-visible:ring-[1px] resize-none"
           {...field}
          />
         </FormControl>
@@ -122,8 +119,8 @@ export function ContactForm() {
      />
      <Button
       type="submit"
+      size="lg"
       disabled={isSubmitting}
-      className="bg-slate-700 hover:bg-slate-900/90 text-slate-200 transition-colors h-12 px-8 cursor-pointer"
      >
       {isSubmitting ? "Sending..." : "Send Message"}
      </Button>

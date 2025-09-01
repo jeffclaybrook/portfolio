@@ -22,8 +22,8 @@ export function ArtboardCarousel() {
    >
     <Tabs defaultValue="desktop">
      <TabsList className="grid grid-cols-2 w-full mb-4">
-      <TabsTrigger value="desktop" className="cursor-pointer">Desktop</TabsTrigger>
-      <TabsTrigger value="mobile" className="cursor-pointer">Mobile</TabsTrigger>
+      <TabsTrigger value="desktop">Desktop</TabsTrigger>
+      <TabsTrigger value="mobile">Mobile</TabsTrigger>
      </TabsList>
      <TabsContent value="desktop">
       <Carousel>
