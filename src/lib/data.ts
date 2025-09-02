@@ -92,7 +92,7 @@ export const projects: ProjectType[] = [
  { title: "Notes App", href: "https://noteworthy-kohl.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-3.webp" },
  { title: "Contacts List", href: "https://contacts-rust-kappa.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-4.webp" },
  { title: "Video Player", href: "https://jeffclaybrook.github.io/custom-video-player", image: "https://d2mx7vld70uuck.cloudfront.net/project-5.webp" },
- { title: "Task App", href: "https://todo-app-coral-omega-23.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-6.webp" },
+ { title: "Task App", href: "https://todo-app-omega-ashy-57.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-6.webp" },
  { title: "Writing Sample", href: "https://d2mx7vld70uuck.cloudfront.net/AE+User+Guide.pdf", image: "https://d2mx7vld70uuck.cloudfront.net/project-7.webp" },
  { title: "YouTube Clone", href: "https://mediasphere.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-8.webp" },
  { title: "Food Truck Menu", href: "https://lil-baghdad.vercel.app/", image: "https://d2mx7vld70uuck.cloudfront.net/project-9.webp" }
